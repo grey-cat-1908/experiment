@@ -48,7 +48,7 @@ function build () {
                     window.location.replace('https://arbuz.icu/experiments/end/');
                 }, 5000);
             } catch (e) {
-                window.location.replace('`https://docs.google.com/forms/d/e/1FAIpQLSe1ae5HVUjaCE6ECDGMQggpzw67prmEWC1sW1sMMEK9bnboWQ/formResponse?entry.2052251640=${answers[0]}&entry.1737390312=${answers[1]}&entry.1094635230=${answers[2]}&entry.1626354024=${answers[3]}&entry.863471071=${answers[4]}&entry.1104590094=${answers[5]}&entry.764460179=${answers[6]}&entry.1311977414=${answers[7]}&entry.951371140=${answers[8]}&entry.870034211=${answers[9]}`');
+                window.location.href = `https://docs.google.com/forms/d/e/1FAIpQLSe1ae5HVUjaCE6ECDGMQggpzw67prmEWC1sW1sMMEK9bnboWQ/formResponse?entry.2052251640=${answers[0]}&entry.1737390312=${answers[1]}&entry.1094635230=${answers[2]}&entry.1626354024=${answers[3]}&entry.863471071=${answers[4]}&entry.1104590094=${answers[5]}&entry.764460179=${answers[6]}&entry.1311977414=${answers[7]}&entry.951371140=${answers[8]}&entry.870034211=${answers[9]}`;
             }
         };
 
