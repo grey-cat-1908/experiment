@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+
+.dark-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    background-color: #333333;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    font-family: "Onest";
+    font-weight: 800;
+    font-size: 72px;
+    text-align: center;
+    margin: 0 1em 0.5em 1em;
+    transition: all 200ms;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+    padding-top: 50px;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    transition: all 1000ms;
+}
+
+.card {
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+    
+    box-sizing: border-box;
+    box-shadow: 0 7px 30px 5px rgb(206,206,206,65%);
+    border: 3px solid transparent;
+    cursor: pointer;
+    flex-shrink: 0;
+    margin: 1em 1.2em 0 1em;
+    transition: opacity .3s, transform .3s;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.container.selected .card.selected {
+    opacity: 1;
+    transform: scale(1.31);
+}
+
+.container.selected .card {
+    opacity: .3;
+}
