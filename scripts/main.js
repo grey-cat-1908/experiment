@@ -32,7 +32,8 @@ function addOnClick () {
 
 function build () {
     if (colors.length == 10 && document.referrer != 'https://arbuz.icu/experiments/00001') {
-        window.location.replace('https://arbuz.icu/experiments/00001')
+        console.log(document.referrer)
+        // window.location.replace('https://arbuz.icu/experiments/00001')
     }
 
     if (colors.length == 0) {
