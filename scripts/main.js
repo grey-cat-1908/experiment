@@ -75,15 +75,14 @@ function build () {
         number.classList.add('animate__fadeOut');
     }
 
-    base.innerHTML = '';
-
     setTimeout(function () {
-
         number.innerHTML = Math.abs(colors.length - 10);
         
         number.classList.remove('animate__fadeOut')
         number.classList.add('animate__fadeIn');
 
+        base.innerHTML = '';
+        
         setTimeout(function () {
             for (let i = 0; i < colors.length; i++) {
                 let element = document.createElement("div");
