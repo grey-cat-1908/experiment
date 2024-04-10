@@ -69,7 +69,7 @@ function build () {
     let number = document.getElementById('number');
 
     if (colors.length != 10) {
-        base.classList.remove('animate__slideInLeft');
+        base.classList.remove('animate__fadeIn');
 
         number.classList.remove('animate__fadeIn');
         number.classList.add('animate__fadeOut');
@@ -97,7 +97,7 @@ function build () {
 
             addOnClick();
 
-            base.classList.add('animate__slideInLeft');
+            base.classList.add('animate__fadeIn');
         }, 600);
     }, 400);
 }
